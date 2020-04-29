@@ -45,10 +45,10 @@ Para Windows, descargar el instalador de [Download Git](https://git-scm.com/down
 2.- Enviar el Username (nombre de usuario) para agregarlos a la organización de Bomberos de Chile.
 
 # Uso de Git y vinculación con GitHub
-Git se usa nativamente utilizando el termianl vía CMD o PowerShell para Windows. Algunos editores de texto permiten utilizar Git mediante su propia interfaz. Por ejemplo, Visual Studio Code tiene una sección para el controlador de versionamiento en su barra de herramientas lateral izquierda.
-![Vs Code Source Control](/images/vsc_source_control.png)
-Una vez vinculado con el repositorio el editor de texto da las facilidades para redactar mensajes en los commits y ejecutar comandos predeterminados.
-![Vs Code GitHub - Connected](/images/vsc_github_conected.png)
+Git se usa nativamente utilizando el termianl vía CMD o PowerShell para Windows. Algunos editores de texto permiten utilizar Git mediante su propia interfaz. Por ejemplo, Visual Studio Code tiene una sección para el controlador de versionamiento en su barra de herramientas lateral izquierda.<br>
+![Vs Code Source Control](/images/vsc_source_control.png)<br>
+Una vez vinculado con el repositorio el editor de texto da las facilidades para redactar mensajes en los commits y ejecutar comandos predeterminados.<br>
+![Vs Code GitHub - Connected](/images/vsc_github_conected.png)<br>
 
 ## Iniciar repositorio Git local
 Para iniciar un repositorio de forma local se hace con el comando <br><br>
@@ -56,17 +56,17 @@ Para iniciar un repositorio de forma local se hace con el comando <br><br>
 el cual crea los archivos necesarios para el repositorio, en la carpeta .git (oculta por defecto por el explorador).
 
 ## Iniciar repositorio en GitHub
-En la barra lateral izquierda de la página inicial de GitHub se encuentra el botón New para añadir un nuevo repositorio
-![GitHub - New Repository](/images/github_new_repo.png)
+En la barra lateral izquierda de la página inicial de GitHub se encuentra el botón New para añadir un nuevo repositorio<br>
+![GitHub - New Repository](/images/github_new_repo.png)<br>
 Aquí se permite seleccionar el Owner (dueño) del repositorio, si estas en una organización puedes crear un repositorio perteneciente a la organización. También se tiene que agregar nombre para el repositorio y una descripción (opcional). Se puede configurar si el repositorio es público o privado, en caso de ser público cualquier usuario puede ver el código que se encuentra y se puede administrar quienes pueden hacer commits, en el privado se tiene el manejo de quienes pueden acceder y hacer commits al repositorio.
 
 Además se agrega la opción de agregar un README (leeme), archivo que se muestra al inicio del proyecto y es recomendado escribir descripción de los requerimientos para el proyecto y sus funcionalidades. Otras opciones adicionales son el .gitignore, que permite agregar en un archivo de texto los archivos o carpetas que no tienen que git debe ignorar, por lo que no serán subidas a github. Finalmente está el archivo de licencia, definidas para proyectos que pueden llegar al público e indica las condiciones en las que se puede utilizar el código.
 ![GitHub - Create New Repository](/images/github_create_new_repo.png)
 
 ## Enlazar/Subir un repositorio local a GitHub
-Para enlazar/subir un repositorio local de git a GitHub es necesario crear el repositorio en GitHub como fue indicado anteriormente. Luego en la sección de Code (código) de repositorio, a la derecha se encuentra un botón verde que dice Clone or Download, el cual muestra un enlace. Luego abrimos el terminal en la carpeta de nuestro repositorio en git local e ingresamos el comando
-`git remote add origin enlace`
-![GitHub - Clone or Download Repository](/images/github_clone_download_repo.png)
+Para enlazar/subir un repositorio local de git a GitHub es necesario crear el repositorio en GitHub como fue indicado anteriormente. Luego en la sección de Code (código) de repositorio, a la derecha se encuentra un botón verde que dice Clone or Download, el cual muestra un enlace. Luego abrimos el terminal en la carpeta de nuestro repositorio en git local e ingresamos el comando<br><br>
+`git remote add origin enlace`<br><br>
+![GitHub - Clone or Download Repository](/images/github_clone_download_repo.png)<br>
 
 ## Enlazar/Descargar un repositorio de Github al repositorio local
 Crear el repositorio en GitHub y con el mismo enlace de la sección anterior ingresar el siguiente comando en la carpeta que quieres que se descargue el repositorio<br><br>
