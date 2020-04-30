@@ -77,7 +77,7 @@ Crear el repositorio en GitHub y con el mismo enlace de la sección anterior ing
 `git clone enlace`
 
 ## Efectuar cambios en el repositorio
-Con el comando `git add` se efectúan cambios en el repositorio local, esto analiza los archivos que seleccionemos en búsqueda de archivos nuevos, eliminados y modificaciones. Esto prepara los archivos para el commit. Se puede realizar de distintas formas, los principales son:
+Hola rodrigo <br> Con el comando `git add` se efectúan cambios en el repositorio local, esto analiza los archivos que seleccionemos en búsqueda de archivos nuevos, eliminados y modificaciones. Esto prepara los archivos para el commit. Se puede realizar de distintas formas, los principales son:
 -	Para efectuar todas las modificaciones, archivos nuevos y eliminados de la carpeta seleccionada por el terminal <br><br>
 `git add -A`<br><br>
 -	Para efectuar los cambios de un archivo/carpeta especifico <br><br>
