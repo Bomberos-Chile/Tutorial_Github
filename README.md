@@ -25,17 +25,21 @@
 
 # Terminología
 Aquí se explicarán los términos más utilizados, para acceder a todos los términos utilizados dirigirse a [GitHub glossary](https://help.github.com/en/github/getting-started-with-github/github-glossary)
--	**Repository (repositorio):** El elemento más básico de GitHub, una especie de carpeta que contiene todo lo relacionado al proyecto y almacena cada archivo entre las diferentes versiones del código. Estos pueden tener múltiples colaboradores y ser públicos o privados.
--	**Branch (rama):** Versión paralela del repositorio que se encuentra dentro del mismo, esto permite seguir distintas líneas para el proyecto sin interferir entre sí. Se encuentra el Master Branch (rama maestra) que es donde se muestra la versión final del proyecto. Cada Branch se puede combinar para integrar los cambios de cada una en una versión final al Master Branch.
--	**Fork (bifurcación):** Copia personal de un repositorio en la cuenta propia. Permite utilizar el repositorio como se quiera, sin afectar de ninguna manera el original y manteniendo total control del repositorio.
--	**Clone (clonar):** Copia de un repositorio a la computadora. El repositorio local tiene un enlace a la versión en línea (GitHub), por lo tanto cuando se le indique puede realizar acciones en este.
--	**Pull (tirar):** Trae las actualizaciones de una rama del repositorio en línea y los mezcla con los archivos del computador local.
--	**Commit (comprometer):** Forma de formalizar un cambio en los archivos y registrarlos en git, aquí hablamos de un punto de guardado de una nueva versión del código. Esto solo hace referencia a los segmentos del código que han sido modificados. Por lo general llevan un comentario asociado para que al revisar el código se sepa que cambios se han hecho en esa versión.
--	**Push (empujar):** Actualiza los cambios realizados, y formalizados con commit, en la rama del repositorio local a la rama del repositorio en línea.
--	**Merge (mezclar):** Fusiona los cambios de una rama y los aplica en otro. Si un archivo no coincide con la versiones de la rama local, solicitará revisión del usuario para aprobar cual versión del código quedará.
--	**Status (estado):** Descripción del estado de la rama local del repositorio, indicando si falta hacer algún commit, problemas en el merge u otros.
--	**Add (añadir):** Analiza los archivos seleccionados para buscar cambios y los hace efectivos para el commit.
--	**Restore (restaurar):** Desecha todas las modificaciones en los archivos seleccionados a los que no se le ha realizado commit.
+-	**Repository (repositorio):** El elemento más básico de GitHub, una especie de carpeta que contiene todo lo relacionado al proyecto y almacena cada archivo entre las diferentes versiones del código. Estos pueden tener múltiples colaboradores y ser públicos o privados. Uso: Se crea un repositorio local con `git init` también se puede crear directamente en GitHub.
+-	**Branch (rama):** Versión paralela del repositorio que se encuentra dentro del mismo, esto permite seguir distintas líneas para el proyecto sin interferir entre sí. Se encuentra el Master Branch (rama maestra) que es donde se muestra la versión final del proyecto. Cada Branch se puede combinar para integrar los cambios de cada una en una versión final al Master Branch. Uso: `git branch`
+-	**Fork (bifurcación):** Copia personal de un repositorio en la cuenta propia. Permite utilizar el repositorio como se quiera, sin afectar de ninguna manera el original y manteniendo total control del repositorio. Uso: Seleccionar opción fork en el proyecto de github.
+-	**Clone (clonar):** Copia de un repositorio a la computadora. El repositorio local tiene un enlace a la versión en línea (GitHub), por lo tanto cuando se le indique puede realizar acciones en este. Uso: `git clone enlace`, el enlace es el del proyecto de github.
+-	**Pull (tirar/halar):** Trae las actualizaciones de una rama del repositorio en línea y los mezcla con los archivos del computador local. Uso `git pull`.
+-	**Commit (comprometer):** Forma de formalizar un cambio en los archivos y registrarlos en git, aquí hablamos de un punto de guardado de una nueva versión del código. Esto solo hace referencia a los segmentos del código que han sido modificados. Por lo general llevan un comentario asociado para que al revisar el código se sepa que cambios se han hecho en esa versión. Uso: `git commit -m "mensaje"`
+-	**Push (empujar):** Actualiza los cambios realizados, y formalizados con commit, en la rama del repositorio local a la rama del repositorio en línea. Uso: `git push`
+-	**Merge (mezclar):** Fusiona los cambios de una rama y los aplica en otro. Si un archivo no coincide con la versiones de la rama local, solicitará revisión del usuario para aprobar cual versión del código quedará. Uso: `git merge`
+-	**Status (estado):** Descripción del estado de la rama local del repositorio, indicando si falta hacer algún commit, problemas en el merge u otros. Uso: `git status`
+-	**Add (añadir):** Analiza los archivos seleccionados para buscar cambios y los hace efectivos para el commit. Uso: `git add  archivo`, `git add -A` para revisar todas las modificaciones del proyecto.
+-	**Restore (restaurar):** Desecha todas las modificaciones en los archivos seleccionados a los que no se le ha realizado commit. Uso: `git restore`
+-  **Pull Request (solicitar tirar)**: Una de las caracteristicas principales de GitHub. Es la acción de solicitar a un administrador del proyecto que revise las modificaciones de nuestro Branch y que las una al Master Branch. Esto se hace cuando grandes equipos estan trabajando en un solo proyecto y es necesario que cada código que quiere incorporar un desarrollador sea revisado para no corromper el proyecto. Se puede ver en la sección de la barra superior del proyecto en github como "Pull Requests"
+- **Wiki**: En Github es la enciclopedia del proyecto e ideal para documentar el proyecto.
+- **Readme (leeme)**: Archivo que se encuentra en la carpeta principal del repositorio, este tiene que tener la información elemental para ejecutrar el proyecto. Se busca que sea lo más reducido posible.
+- **Issues (problema)**: Opción presente en la barra superior del proyecto en GitHub como "Issues". Permite señalar problemas presentes en el proyecto, principalmente señalando los errores que se tienen y no es necesario que se hable de código, sino que detallar el problema y en lo posible detallar la situación en la que sucede. También es muy utilizado para sugerir ideas.
 
 # Iniciar en Git y GitHub
 ## Instalar Git
