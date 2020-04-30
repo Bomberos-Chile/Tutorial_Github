@@ -55,7 +55,7 @@ Para iniciar un repositorio de forma local se hace con el comando <br><br>
 `git init` <br><br>
 el cual crea los archivos necesarios para el repositorio, en la carpeta .git (oculta por defecto por el explorador).
 
-## Iniciar repositorio en GitHub
+## Iniciar repositorio en GitHub (remoto)
 En la barra lateral izquierda de la página inicial de GitHub se encuentra el botón New para añadir un nuevo repositorio<br>
 ![GitHub - New Repository](/images/github_new_repo.png)<br>
 Aquí se permite seleccionar el Owner (dueño) del repositorio, si estas en una organización puedes crear un repositorio perteneciente a la organización. También se tiene que agregar nombre para el repositorio y una descripción (opcional). Se puede configurar si el repositorio es público o privado, en caso de ser público cualquier usuario puede ver el código que se encuentra y se puede administrar quienes pueden hacer commits, en el privado se tiene el manejo de quienes pueden acceder y hacer commits al repositorio.
@@ -84,7 +84,21 @@ Para agregar las modificaciones efectuadas al repositorio local se utiliza el co
 ## Descargar modificaciones de github al repositorio local
 Se descargan las modificaciones de la rama maestra de github al a la rama maestra del repositorio de local mediante el comando<br><br>
 `git pull`<br><br>
+este comando es una ejecución de un `git fetch`, que trae los archivos del repositorio remoto, seguido de un `git merge` que mezcla los archivos.
 ## Subir modificaciones del repositorio local a github
 Se suben las modificaciones de la rama maestra del repositorio local a la rama maestra del repositorio de github mediante el comando<br><br>
 `git push`<br><br>
-Es recomendado hacer un `git pull` siempre antes de un `git push`
+Es recomendado hacer un `git pull` siempre antes de un `git push`<br><br>
+
+## Mezclar repositororios
+Cuando tenemos dos repositorios, ya sea local o remoto, se combinan estos. En ocaciones se puede editar código de un mismo archivo e incluso editar una misma linea. Esto genera un conflicto, ya que se tiene que decidir cual será el cambio que quedara finalmente. Aquí es donde Git tiene el comando <br><br>
+`git merge`<br><br>
+el cual combina los diferentes repositorios y cuando existe una interferencia se genera lo siguiente:<br><br>
+   `<<<<<<< HEAD 
+        <codigo local>
+    >>>>>>>> 
+     <codigo remoto>
+     >>>>>>> 17ed5a8a2f2b44e4daf2302d63f6a6b8163xxxxx` <br><br>
+
+aquí es donde quien se encuentra en el proceso de merge tiene que elegir qué código quedará finalmente, donde tiene que borrar todo y dejar solo el `<codigo>` que desea conservar. Luego se realiza un `git commit` para comprometer los cambios y un `git push`para subirlos al repositorio remoto.<br><br>
+Recordar que el `git pull` incluye un `git merge`por lo que se realiza el mismo proceso al tener conflictos.
